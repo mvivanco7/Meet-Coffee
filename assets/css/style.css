@@ -1,0 +1,73 @@
+/* ESTO ES UN COMENTARIO EN CSS    */
+
+body{
+  /* cambio por selector de etiqueta */
+  background: gray;
+}
+p{
+  color: blue;
+}
+footer {
+  text-align: center;
+}
+
+section {
+  background: green;
+}
+
+
+.imagenTaza{
+  width: 5%;
+}
+
+.imagenAmbulancia{
+  width: 15%;
+}
+
+.imagenAmbulancia p{
+  font-size: 80%;
+}
+.textoRaleway{
+  font-family: 'Raleway', sans-serif;
+}
+
+
+.objeto{
+  /* selector por clase */
+  background: yellow;
+}
+
+
+.evento{
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+
+.charla{
+  width:50%;
+
+}
+
+.intermedio{
+  background: orange;
+  font-size: 3rem;
+  border-style: dotted;
+  border-color: green;
+  background: blue;
+}
+
+.intermedio p{
+  /* cambio de color por una regla específica que modifica la regla general */
+  color: white;
+}
+
+#eventos {
+  /* selector por ID */
+  background: purple;
+}
+
+#miTitulo{
+  /* cambio por selector de id */
+  text-align: right;
+}

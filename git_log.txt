@@ -1,0 +1,289 @@
+moises@moises-HP-EliteBook-Folio-9480m:~$ ssh-add ~/.ssh/id_rsa
+Identity added: /home/moises/.ssh/id_rsa (mvivanco7@hotmail.com)
+moises@moises-HP-EliteBook-Folio-9480m:~$ sudo apt install xclip
+[sudo] password for moises:
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  linux-headers-5.4.0-65 linux-headers-5.4.0-65-generic
+  linux-image-5.4.0-65-generic linux-modules-5.4.0-65-generic
+  linux-modules-extra-5.4.0-65-generic
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  xclip
+0 upgraded, 1 newly installed, 0 to remove and 252 not upgraded.
+Need to get 18,4 kB of archives.
+After this operation, 60,4 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu focal/universe amd64 xclip amd64 0.13-1 [18,4 kB]
+Fetched 18,4 kB in 1s (18,7 kB/s)
+Selecting previously unselected package xclip.
+(Reading database ... 423910 files and directories currently installed.)
+Preparing to unpack .../xclip_0.13-1_amd64.deb ...
+Unpacking xclip (0.13-1) ...
+Setting up xclip (0.13-1) ...
+Processing triggers for man-db (2.9.1-1) ...
+moises@moises-HP-EliteBook-Folio-9480m:~$ xclip -sel clip < ~/.ssh/id_rsa.pub
+moises@moises-HP-EliteBook-Folio-9480m:~$ ssh -T git@github.com
+The authenticity of host 'github.com (140.82.113.3)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,140.82.113.3' (RSA) to the list of known hosts.
+Hi mvivanco7! You've successfully authenticated, but GitHub does not provide shell access.
+moises@moises-HP-EliteBook-Folio-9480m:~$ git remote
+fatal: not a git repository (or any of the parent directories): .git
+moises@moises-HP-EliteBook-Folio-9480m:~$ git remote -v
+fatal: not a git repository (or any of the parent directories): .git
+moises@moises-HP-EliteBook-Folio-9480m:~$ git remote -v
+fatal: not a git repository (or any of the parent directories): .git
+moises@moises-HP-EliteBook-Folio-9480m:~$ git remote
+fatal: not a git repository (or any of the parent directories): .git
+moises@moises-HP-EliteBook-Folio-9480m:~$ pwd
+/home/moises
+moises@moises-HP-EliteBook-Folio-9480m:~$ cd /opt/lampp/htdocs/eticolores
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/eticolores$ pwd
+/opt/lampp/htdocs/eticolores
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/eticolores$ git remote
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/eticolores$ git remote
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/eticolores$ git remote -v
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/eticolores$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/eticolores$ cd ..
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs$ ls
+ applications.html   eticolores.cl       jardin         pruebaicono
+ aypuy               fasabmb            'Meet&Coffee'   Resource
+ bitnami.css         favicon.ico         milapiz        ResourceIG
+ bootstrapproj       fdluzelectric2021   navbar         slider
+ color               fdluzelectric.cl    perulibre      webalizer
+ color1              header              plantilla
+ dashboard           img                 probandojs
+ eticolores          index.php           prueba
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs$ cd 'Meet&Coffee'
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git branch -M main
+fatal: not a git repository (or any of the parent directories): .git
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git remote add origin https://github.com/mvivanco7/Meet-Coffee.git
+fatal: not a git repository (or any of the parent directories): .git
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ pwd
+/opt/lampp/htdocs/Meet&Coffee
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git remote add origin https://github.com/mvivanco7/Meet-Coffee.git
+fatal: not a git repository (or any of the parent directories): .git
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Initialized empty Git repository in /opt/lampp/htdocs/Meet&Coffee/.git/
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git branch -M main
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git remote add origin https://github.com/mvivanco7/Meet-Coffee.git
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git remote -v
+origin	https://github.com/mvivanco7/Meet-Coffee.git (fetch)
+origin	https://github.com/mvivanco7/Meet-Coffee.git (push)
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/mvivanco7/Meet-Coffee.git'
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/mvivanco7/Meet-Coffee.git'
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	assets/
+	favicon.png
+	index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git add index.html
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git add .
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   assets/css/style.css
+	new file:   assets/img/bg-hero.png
+	new file:   assets/img/coffee-cup.svg
+	new file:   assets/img/machine-learning.jpg
+	new file:   assets/img/post-1.jpg
+	new file:   assets/img/scrum-sin-scream.jpg
+	new file:   assets/img/simposio-vegan.jpg
+	new file:   assets/img/speaker.jpg
+	new file:   assets/img/we-work.jpg
+	new file:   favicon.png
+	new file:   index.html
+
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git remote add origin https://github.com/mvivanco7/Meet-Coffee.git
+error: remote origin already exists.
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/mvivanco7/Meet-Coffee.git'
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git branch -M main
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git remote add origin https://github.com/mvivanco7/Meet-Coffee.git
+error: remote origin already exists.
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/mvivanco7/Meet-Coffee.git'
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git branch -M main
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git remote add origin https://github.com/mvivanco7/Meet-Coffee.git
+error: remote origin already exists.
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git remote add origin https://github.com/mvivanco7/Meet-Coffee.git
+error: remote origin already exists.
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git remote show
+origin
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git remote show
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/mvivanco7/Meet-Coffee.git'
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   assets/css/style.css
+	new file:   assets/img/bg-hero.png
+	new file:   assets/img/coffee-cup.svg
+	new file:   assets/img/machine-learning.jpg
+	new file:   assets/img/post-1.jpg
+	new file:   assets/img/scrum-sin-scream.jpg
+	new file:   assets/img/simposio-vegan.jpg
+	new file:   assets/img/speaker.jpg
+	new file:   assets/img/we-work.jpg
+	new file:   favicon.png
+	new file:   index.html
+
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git commit -m "commit1"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'moises@moises-HP-EliteBook-Folio-9480m.(none)')
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git config --global user.email "mvivanco7@hotmail.com"
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git config --global user.name "mvivanco7"
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git commit -m "commit1"
+[main (root-commit) 5bfb9e8] commit1
+ 11 files changed, 239 insertions(+)
+ create mode 100644 assets/css/style.css
+ create mode 100644 assets/img/bg-hero.png
+ create mode 100644 assets/img/coffee-cup.svg
+ create mode 100644 assets/img/machine-learning.jpg
+ create mode 100644 assets/img/post-1.jpg
+ create mode 100644 assets/img/scrum-sin-scream.jpg
+ create mode 100644 assets/img/simposio-vegan.jpg
+ create mode 100644 assets/img/speaker.jpg
+ create mode 100644 assets/img/we-work.jpg
+ create mode 100644 favicon.png
+ create mode 100644 index.html
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git log
+commit 5bfb9e8f399a795ff664d7c677160aea435113db (HEAD -> main)
+Author: mvivanco7 <mvivanco7@hotmail.com>
+Date:   Wed Jul 7 12:25:40 2021 -0400
+
+    commit1
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git push -u origin main
+Username for 'https://github.com': mvivanco7
+Password for 'https://mvivanco7@github.com':
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (16/16), 2.87 MiB | 2.15 MiB/s, done.
+Total 16 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/mvivanco7/Meet-Coffee.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git diff
+diff --git a/index.html b/index.html
+index 305a2c7..8b03c78 100644
+--- a/index.html
++++ b/index.html
+@@ -13,6 +13,8 @@ tecnología, co-work">
+ <link rel="stylesheet" href="assets/css/style.css">
+ </head>
+ <body>
++  <hr>^M
++  <p> cualquier cosa</p>^M
+   <nav>
+     <ul>
+       <li><a href="#">Ícono</a></li>
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git add .
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   index.html
+
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git commit -m "se agrego parrafo despues del body"
+[main 1f1eee6] se agrego parrafo despues del body
+ 1 file changed, 2 insertions(+)
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git log
+commit 1f1eee6a144ce153ab9bfeaf561f41f750a0438f (HEAD -> main)
+Author: mvivanco7 <mvivanco7@hotmail.com>
+Date:   Wed Jul 7 12:31:27 2021 -0400
+
+    se agrego parrafo despues del body
+
+commit 5bfb9e8f399a795ff664d7c677160aea435113db (origin/main)
+Author: mvivanco7 <mvivanco7@hotmail.com>
+Date:   Wed Jul 7 12:25:40 2021 -0400
+
+    commit1
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git push -u origin main
+Username for 'https://github.com': mvivanco7
+Password for 'https://mvivanco7@github.com':
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 327 bytes | 327.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/mvivanco7/Meet-Coffee.git
+   5bfb9e8..1f1eee6  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$ git log
+commit 1f1eee6a144ce153ab9bfeaf561f41f750a0438f (HEAD -> main, origin/main)
+Author: mvivanco7 <mvivanco7@hotmail.com>
+Date:   Wed Jul 7 12:31:27 2021 -0400
+
+    se agrego parrafo despues del body
+
+commit 5bfb9e8f399a795ff664d7c677160aea435113db
+Author: mvivanco7 <mvivanco7@hotmail.com>
+Date:   Wed Jul 7 12:25:40 2021 -0400
+
+    commit1
+moises@moises-HP-EliteBook-Folio-9480m:/opt/lampp/htdocs/Meet&Coffee$
